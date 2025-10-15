@@ -1,0 +1,15 @@
+base_dir: ../datasets/
+
+paths:
+  dataset_index: indexes/spine_dataset_index.json
+  output_images_dir: path/to/resampled/images/
+  output_labels_dir: path/to/resampled/labels/
+
+processing:
+  new_spacing: [1.0, 1.0, 1.0]
+  image_interpolation: linear
+  label_interpolation: nearest
+
+options:
+  overwrite: false
+  dry_run: false

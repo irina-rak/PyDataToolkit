@@ -1,0 +1,25 @@
+[project]
+name = "pydatatoolkit"
+version = "0.1.0"
+description = "A collection of Python scripts for data exploration, dataset management, image processing, and other essential manipulation tasks."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "nibabel>=5.3.2",
+    "omegaconf>=2.3.0",
+    "pandas>=2.3.3",
+    "rich>=14.2.0",
+    "scipy>=1.16.2",
+]
+
+[project.optional-dependencies]
+# GPU-accelerated resampling with MONAI
+gpu = [
+    "monai>=1.5.1",
+    "torch>=2.0.0",
+]
+# All optional features
+all = [
+    "monai>=1.5.1",
+    "torch>=2.0.0",
+]

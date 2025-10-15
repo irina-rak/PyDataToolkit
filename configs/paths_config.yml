@@ -1,0 +1,14 @@
+images_dir: ../path/to/images
+labels_dir: ../path/to/labels
+output: ../path/to/output.json
+
+image_extensions:
+  - .nii
+  - .nii.gz
+label_extensions:
+  - .nii
+  - .nii.gz
+
+recursive: false # Whether to search directories recursively
+relative_to: .. # Path is relative to this directory
+force: false # Overwrite existing output file
