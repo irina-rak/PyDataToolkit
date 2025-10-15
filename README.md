@@ -7,7 +7,7 @@ A collection of Python scripts for data exploration, dataset management, image p
 
 The resampling script (`src/data_processing/resample_data.py`) now supports multiple backends with automatic selection:
 
-- **MONAI + GPU** (fastest): 10-100x faster than CPU when CUDA is available
+- **MONAI + GPU** (fastest): 2-3x faster than CPU when CUDA is available
 - **MONAI + CPU**: Optimized CPU processing with MONAI
 - **nibabel + scipy** (fallback): Reliable CPU-based resampling
 
